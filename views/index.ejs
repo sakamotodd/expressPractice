@@ -4,9 +4,17 @@
     <%- include("./_share/metadata.ejs") %>
     <title>Document</title>
     <%- include("./_share/stylesheets.ejs") %>
+    <link rel="stylesheet" href="/public/stylesheets/index.css" />
   </head>
   <body>
-    <h1>Hello would!!</h1>
-    <p>test</p>
+    <div class="outerframe">
+      <%- include("./_share/navbar.ejs") %>
+      <main
+        role="main"
+        class="container d-flex justify-content-md-center"
+      ></main>
+      <%- include("./_share/footer.ejs") %>
+    </div>
+    <%- include("./_share/javascripts.ejs") %>
   </body>
 </html>
